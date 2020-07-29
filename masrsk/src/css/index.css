@@ -1,0 +1,97 @@
+body {
+  font-family: arial;
+  display: flex;
+}
+
+@media (max-width: 375px) {
+  .main-container {
+    padding: 20px;
+  }
+  .action-container {
+    order: 1;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+  }
+  .grid-container {
+    order: 2;
+  }
+  .grid-container > div {
+    background: none !important;
+    text-align: center;
+    font-size: 30px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;
+    padding: 0.8em 1.2em;
+    overflow: hidden;
+    list-style: none;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #369;
+  color: white;
+}
+
+.main-container {
+  flex-direction: row;
+  padding: 10px;
+}
+.action-container {
+  display: flex;
+  order: 1;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+
+.button {
+  background-color: #71c2db;
+  color: #eeeeee;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 3px #d5e2e6;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #690;
+  color: white;
+}
+
+.grid-container {
+  order: 2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #efefef;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: solid 1px white;
+  background: fade(slategrey, 20%);
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+}
