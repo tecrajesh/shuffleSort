@@ -36,6 +36,4 @@ Colours used in this design:
 #2F454E
 #72C3DC
 
-
-![sample output] 
-(./APSample.gif)
+![](APSample.gif)
