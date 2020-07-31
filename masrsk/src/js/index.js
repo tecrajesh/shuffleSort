@@ -1,13 +1,13 @@
 const colorCode = [
-  '#000000',
-  '#2B8EAD',
-  '#333333',
-  '#6F98A8',
-  '#FFFFFF',
-  '#BFBFBF',
-  '#EFEFEF',
-  '#2F454E',
-  '#72C3DC',
+  '#6f98a8',
+  '#298dac',
+  '#2f444e',
+  '#2a8ead',
+  '#2f444e',
+  '#bebebe',
+  '#bfbfbf',
+  '#6f98a8',
+  '#2f444e',
 ];
 
 const items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -45,10 +45,11 @@ function render(items) {
     let node = document.createElement('div');
     node.innerText = items[i];
     node.style.cssText = `background-color: ${
-      colorCode[items[i]]
-    };width:100px;height:100px;text-align:center;font-size:3em;border-left:10px solid ${
-      colorCode[items[i]]
+      colorCode[items[i] - 1]
+    };text-align:center;color:white;font-size:3em;border-left:5px solid ${
+      colorCode[items[i] - 1]
     }`;
+    node.className = 'flex-items';
     gridContainer.appendChild(node);
   }
 }

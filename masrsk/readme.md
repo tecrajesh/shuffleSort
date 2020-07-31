@@ -37,4 +37,4 @@ Colours used in this design:
 #EFEFEF #2F454E
 #72C3DC
 
-[sample output for this problem project](./sample.gif)
+[sample output for this problem project](./APSample.gif)
