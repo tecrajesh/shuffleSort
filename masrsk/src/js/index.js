@@ -1,3 +1,5 @@
+
+//color codes for grid items
 const colorCode = [
   '#6f98a8',
   '#298dac',
@@ -9,17 +11,23 @@ const colorCode = [
   '#6f98a8',
   '#2f444e',
 ];
-
+//default items
 const items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//Setting defaulting flag for shuffle actions 
 let isShuffleTriggered = false;
+
+// Accessing the elements 
 let btnShuffle = document.getElementById('btnShuffle');
 let btnSort = document.getElementById('btnSort');
 let gridContainer = document.getElementById('main');
+
+// add event listener for shuffle and sort button
 btnShuffle.addEventListener('click', doShuffle);
 btnSort.addEventListener('click', doSort);
 
-render(items);
 
+
+//Shuffling the items
 function doShuffle() {
   let array = [...items];
   isShuffleTriggered = true;
@@ -32,12 +40,16 @@ function doShuffle() {
   render(array);
 }
 
+// Sorting Actions
 function doSort() {
   if (isShuffleTriggered) {
     render(items);
     isShuffleTriggered = false;
   }
 }
+
+//Actual method to render the grid.
+// Setting the all styles and classnames
 
 function render(items) {
   clearChild();
@@ -54,8 +66,13 @@ function render(items) {
   }
 }
 
+// Clear the grid before making the changes either sort or shuffle
 function clearChild() {
   while (gridContainer.firstChild) {
     gridContainer.removeChild(gridContainer.firstChild);
   }
 }
+
+
+// Initialize the render with sorted items.
+render(items);
