@@ -5,9 +5,7 @@ you to accurately make this responsive
 design
 .
 The page consists of 9 numbered cards
-which can be man
-
-ipulated by using the
+which can be manipulated by using the
 
 shuffle and short buttons
 .
